@@ -267,6 +267,17 @@ plot path: DATA-ANALYTICS-WITH-R-EXCEL-TABLEAU_Session23Assignment23.1/23.1 Resi
 2           
 > 
 
+> #running a model on diff data
+> model3<-auto.arima(diff(data))
+
+> accuracy(model3)
+> ##                     ME     RMSE      MAE MPE MAPE      MASE      ACF1
+> ## Training set 0.2732813 2.188771 1.472657 100  100 0.7590256 0.1695623
+> acf(diff(data))
+> pacf(diff(data))
+plot path: DATA-ANALYTICS-WITH-R-EXCEL-TABLEAU_Session23Assignment23.1/23.1 ACF and Partial ACF.png
+
+
       
                                                                                3
 Data Analytics
